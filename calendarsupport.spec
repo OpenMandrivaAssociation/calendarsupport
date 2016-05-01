@@ -24,6 +24,9 @@ BuildRequires: cmake(KF5Libkdepim)
 BuildRequires: cmake(KF5CalendarUtils)
 BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(KF5AkonadiCalendar)
+BuildRequires: cmake(Qt5UiTools)
+BuildRequires: cmake(KF5PimCommon)
+BuildRequires: cmake(KF5KdepimDBusInterfaces)
 BuildRequires: sasl-devel
 
 %description
