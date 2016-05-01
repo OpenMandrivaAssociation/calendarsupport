@@ -21,6 +21,9 @@ BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(Qt5Qml)
 BuildRequires: cmake(KF5Libkdepim)
+BuildRequires: cmake(KF5CalendarUtils)
+BuildRequires: cmake(KF5Holidays)
+BuildRequires: cmake(KF5AkonadiCalendar)
 BuildRequires: sasl-devel
 
 %description
