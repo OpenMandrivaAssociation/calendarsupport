@@ -3,7 +3,7 @@
 %define devname %mklibname KF5CalendarSupport -d
 
 Name: calendarsupport
-Version:	16.12.2
+Version:	17.04.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -60,8 +60,9 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+%find_lang calendarsupport
 
-%files
+%files -f calendarsupport.lang
 %{_sysconfdir}/xdg/calendarsupport.categories
 %{_sysconfdir}/xdg/calendarsupport.renamecategories
 %{_datadir}/kservicetypes5/calendarplugin.desktop
