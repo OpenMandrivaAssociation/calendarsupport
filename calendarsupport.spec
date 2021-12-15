@@ -43,6 +43,9 @@ BuildRequires: cmake(KF5Akonadi)
 BuildRequires: cmake(KF5AkonadiNotes)
 BuildRequires: boost-devel
 BuildRequires: sasl-devel
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for calendar handling.
