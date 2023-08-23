@@ -3,7 +3,7 @@
 %define devname %mklibname KF5CalendarSupport -d
 
 Name: calendarsupport
-Version:	23.04.3
+Version:	23.08.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -28,19 +28,19 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5IconThemes)
 BuildRequires: cmake(KF5GuiAddons)
 BuildRequires: cmake(KF5KIO)
-BuildRequires: cmake(KF5Mime)
-BuildRequires: cmake(KF5AkonadiMime)
+BuildRequires: cmake(KPim5Mime)
+BuildRequires: cmake(KPim5AkonadiMime)
 BuildRequires: cmake(KF5Codecs)
-BuildRequires: cmake(KF5CalendarUtils)
+BuildRequires: cmake(KPim5CalendarUtils)
 BuildRequires: cmake(KF5CalendarCore)
-BuildRequires: cmake(KF5IdentityManagement)
+BuildRequires: cmake(KPim5IdentityManagement)
 BuildRequires: cmake(KF5Holidays)
-BuildRequires: cmake(KF5AkonadiCalendar)
-BuildRequires: cmake(KF5PimCommon)
-BuildRequires: cmake(KF5IMAP)
-BuildRequires: cmake(KF5Libkdepim)
-BuildRequires: cmake(KF5Akonadi)
-BuildRequires: cmake(KF5AkonadiNotes)
+BuildRequires: cmake(KPim5AkonadiCalendar)
+BuildRequires: cmake(KPim5PimCommon)
+BuildRequires: cmake(KPim5IMAP)
+BuildRequires: cmake(KPim5Libkdepim)
+BuildRequires: cmake(KPim5Akonadi)
+BuildRequires: cmake(KPim5AkonadiNotes)
 BuildRequires: boost-devel
 BuildRequires: sasl-devel
 # For QCH format docs
