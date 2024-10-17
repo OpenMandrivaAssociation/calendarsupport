@@ -20,7 +20,7 @@ Source0:	https://invent.kde.org/pim/calendarsupport/-/archive/%{gitbranch}/calen
 Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/calendarsupport-%{version}.tar.xz
 %endif
 Summary: KDE library for calendar handling
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
