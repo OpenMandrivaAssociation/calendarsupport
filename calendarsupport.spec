@@ -5,7 +5,7 @@
 %define libname %mklibname KF6CalendarSupport
 %define devname %mklibname KF6CalendarSupport -d
 
-Name: plasma6-calendarsupport
+Name: calendarsupport
 Version:	25.04.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
