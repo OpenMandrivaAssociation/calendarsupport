@@ -48,7 +48,6 @@ BuildRequires: cmake(KPim6PimCommon)
 BuildRequires: cmake(KPim6IMAP)
 BuildRequires: cmake(KPim6Libkdepim)
 BuildRequires: cmake(KPim6Akonadi)
-BuildRequires: cmake(KPim6AkonadiNotes)
 BuildRequires: boost-devel
 BuildRequires: sasl-devel
 # For QCH format docs
