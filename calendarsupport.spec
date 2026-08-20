@@ -6,7 +6,7 @@
 %define devname %mklibname KF6CalendarSupport -d
 
 Name: calendarsupport
-Version:	26.04.3
+Version:	26.08.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -36,7 +36,7 @@ BuildRequires: cmake(KF6I18n)
 BuildRequires: cmake(KF6IconThemes)
 BuildRequires: cmake(KF6GuiAddons)
 BuildRequires: cmake(KF6KIO)
-BuildRequires: cmake(KPim6Mime)
+BuildRequires: cmake(KF6Mime)
 BuildRequires: cmake(KPim6AkonadiMime)
 BuildRequires: cmake(KF6Codecs)
 BuildRequires: cmake(KPim6CalendarUtils)
@@ -56,6 +56,7 @@ BuildRequires: qt6-qttools-assistant
 %rename plasma6-calendarsupport
 
 BuildSystem:	cmake
+BuildOption:	-DBUILD_PYTHON_BINDINGS:BOOL=OFF
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
